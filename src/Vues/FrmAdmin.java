@@ -214,6 +214,7 @@ public class FrmAdmin extends javax.swing.JFrame {
         mdlTicket=new ModelTicket();
         mdlTicket.loadDatas(fm.GetAllTicketsByIdUser(idUser));
         tblTickets.setModel(mdlTicket);
+        txtNumTicket.setText(String.valueOf(fm.GetLastIdTicket()));
                 }
     }//GEN-LAST:event_btnInsererNouveauTicketMouseClicked
 
